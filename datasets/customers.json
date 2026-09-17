@@ -219,6 +219,22 @@
         "computeOnBuildMode": "PARTITION",
         "autoRun": false,
         "enabled": true
+      },
+      {
+        "type": "ColumnUniqueValuesRule",
+        "columns": [
+          "customer_id"
+        ],
+        "thresholdType": "ENTIRE_COLUMN",
+        "minimum": 0.0,
+        "minimumEnabled": false,
+        "softMinimum": 0.0,
+        "softMinimumEnabled": false,
+        "id": "Wg2TUdrf",
+        "displayName": "customer_id unique",
+        "computeOnBuildMode": "PARTITION",
+        "autoRun": false,
+        "enabled": true
       }
     ],
     "displayedState": {
