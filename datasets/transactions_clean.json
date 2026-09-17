@@ -214,7 +214,23 @@
         "softMaximum": 0.0,
         "softMaximumEnabled": false,
         "id": "djuO2teS",
-        "displayName": "No empty values exist in txn_id",
+        "displayName": "vérifier que chaque transaction possède bien un identifiant txn_id",
+        "computeOnBuildMode": "PARTITION",
+        "autoRun": true,
+        "enabled": true
+      },
+      {
+        "type": "ColumnNotEmptyRule",
+        "columns": [
+          "account_id"
+        ],
+        "thresholdType": "ENTIRE_COLUMN_NOT_EMPTY",
+        "maximum": 0.0,
+        "maximumEnabled": false,
+        "softMaximum": 0.0,
+        "softMaximumEnabled": false,
+        "id": "oiAorH6U",
+        "displayName": "aucune transaction ne doit exister sans compte associé",
         "computeOnBuildMode": "PARTITION",
         "autoRun": true,
         "enabled": true
