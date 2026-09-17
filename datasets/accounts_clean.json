@@ -185,7 +185,24 @@
   },
   "metricsChecks": {
     "monitor": false,
-    "checks": [],
+    "checks": [
+      {
+        "type": "ColumnNotEmptyRule",
+        "columns": [
+          "account_id"
+        ],
+        "thresholdType": "ENTIRE_COLUMN_NOT_EMPTY",
+        "maximum": 0.0,
+        "maximumEnabled": false,
+        "softMaximum": 0.0,
+        "softMaximumEnabled": false,
+        "id": "Z0u3NN2W",
+        "displayName": "No empty values exist in account_id",
+        "computeOnBuildMode": "PARTITION",
+        "autoRun": true,
+        "enabled": true
+      }
+    ],
     "displayedState": {
       "checks": []
     }
