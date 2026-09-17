@@ -265,6 +265,25 @@
         "computeOnBuildMode": "PARTITION",
         "autoRun": true,
         "enabled": true
+      },
+      {
+        "type": "ColumnMinInRangeRule",
+        "columns": [
+          "balance"
+        ],
+        "minimum": 0.01,
+        "minimumEnabled": true,
+        "maximum": 0.0,
+        "maximumEnabled": false,
+        "softMinimum": 0.0,
+        "softMinimumEnabled": false,
+        "softMaximum": 0.0,
+        "softMaximumEnabled": false,
+        "id": "n6nPRggd",
+        "displayName": "Min of balance is above 0.01",
+        "computeOnBuildMode": "PARTITION",
+        "autoRun": true,
+        "enabled": true
       }
     ],
     "displayedState": {
