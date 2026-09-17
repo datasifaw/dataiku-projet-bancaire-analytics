@@ -2,7 +2,7 @@
 
 ## Data Preparation, Analytics, Machine Learning et MLOps
 
-## Contexte
+## Contexte : 
 
 Une banque dispose de données relatives à ses agences, clients,
 comptes et transactions.
@@ -12,7 +12,7 @@ fiabiliser, analyser et exploiter ces données dans un Flow complet,
 puis de construire des modèles de Machine Learning pour produire
 des prédictions, segmenter les clients et automatiser le scoring.
 
-## Données
+## Données :
 
 Le projet utilise quatre sources principales :
 
@@ -21,7 +21,7 @@ Le projet utilise quatre sources principales :
 - `accounts.csv` : informations sur les comptes bancaires
 - `transactions.csv` : transactions financières
 
-## Architecture du projet
+## Architecture du projet :
 
 Données bancaires
 ↓
