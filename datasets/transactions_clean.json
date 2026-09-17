@@ -198,7 +198,7 @@
         "softMaximum": 0.0,
         "softMaximumEnabled": false,
         "id": "uUvyw5yE",
-        "displayName": ": le montant d’une transaction doit être strictement positif",
+        "displayName": " le montant d’une transaction doit être strictement positif",
         "computeOnBuildMode": "PARTITION",
         "autoRun": true,
         "enabled": true
@@ -264,6 +264,22 @@
         ],
         "id": "TMzkNXV9",
         "displayName": "channel valide",
+        "computeOnBuildMode": "PARTITION",
+        "autoRun": true,
+        "enabled": true
+      },
+      {
+        "type": "ColumnUniqueValuesRule",
+        "columns": [
+          "txn_id"
+        ],
+        "thresholdType": "ENTIRE_COLUMN",
+        "minimum": 0.0,
+        "minimumEnabled": false,
+        "softMinimum": 0.0,
+        "softMinimumEnabled": false,
+        "id": "AoXhF2Sl",
+        "displayName": "txn_id unique",
         "computeOnBuildMode": "PARTITION",
         "autoRun": true,
         "enabled": true
