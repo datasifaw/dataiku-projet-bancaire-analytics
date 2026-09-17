@@ -203,7 +203,24 @@
   },
   "metricsChecks": {
     "monitor": false,
-    "checks": [],
+    "checks": [
+      {
+        "type": "ColumnNotEmptyRule",
+        "columns": [
+          "customer_id"
+        ],
+        "thresholdType": "ENTIRE_COLUMN_NOT_EMPTY",
+        "maximum": 0.0,
+        "maximumEnabled": false,
+        "softMaximum": 0.0,
+        "softMaximumEnabled": false,
+        "id": "9YhOoQBl",
+        "displayName": "No empty values exist in customer_id",
+        "computeOnBuildMode": "PARTITION",
+        "autoRun": false,
+        "enabled": true
+      }
+    ],
     "displayedState": {
       "checks": []
     }
