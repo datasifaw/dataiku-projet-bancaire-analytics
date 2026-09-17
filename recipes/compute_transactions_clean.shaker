@@ -1,6 +1,40 @@
 {
   "columnsSelection": {
-    "mode": "ALL"
+    "mode": "ALL",
+    "list": [
+      {
+        "d": true,
+        "name": "txn_id"
+      },
+      {
+        "d": true,
+        "name": "account_id"
+      },
+      {
+        "d": true,
+        "name": "txn_type"
+      },
+      {
+        "d": true,
+        "name": "amount"
+      },
+      {
+        "d": true,
+        "name": "txn_timestamp"
+      },
+      {
+        "d": true,
+        "name": "channel"
+      },
+      {
+        "d": true,
+        "name": "status"
+      },
+      {
+        "d": true,
+        "name": "created_at"
+      }
+    ]
   },
   "explorationSampling": {
     "_refreshTrigger": 0,
@@ -30,8 +64,29 @@
   "explorationFilters": [],
   "columnOrder": [],
   "columnUseScientificNotationByName": {},
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "StringTransformer",
+      "params": {
+        "mode": "TRIM",
+        "columns": [
+          "txn_id",
+          "channel",
+          "status"
+        ],
+        "appliesTo": "COLUMNS",
+        "truncate_limit": 0
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -59,7 +114,16 @@
   },
   "analysisColumnData": {},
   "flagNumericValues": true,
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "txn_id": 100,
+    "amount": 134,
+    "txn_timestamp": 148,
+    "account_id": 100,
+    "txn_type": 100,
+    "channel": 100,
+    "created_at": 197,
+    "status": 100
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
