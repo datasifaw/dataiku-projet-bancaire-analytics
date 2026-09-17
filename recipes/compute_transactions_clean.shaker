@@ -94,9 +94,9 @@
       "params": {
         "mode": "TO_UPPER",
         "columns": [
-          "txn_id",
           "channel",
-          "status"
+          "status",
+          "txn_type"
         ],
         "appliesTo": "COLUMNS",
         "truncate_limit": 0
