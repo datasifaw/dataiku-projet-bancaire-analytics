@@ -249,6 +249,24 @@
         "computeOnBuildMode": "PARTITION",
         "autoRun": true,
         "enabled": true
+      },
+      {
+        "type": "ValuesInSetRule",
+        "columns": [
+          "channel"
+        ],
+        "valueSet": [
+          "NEFT",
+          "POS",
+          "RTGS",
+          "ATM",
+          "UPI"
+        ],
+        "id": "TMzkNXV9",
+        "displayName": "All values of channel are in set",
+        "computeOnBuildMode": "PARTITION",
+        "autoRun": true,
+        "enabled": true
       }
     ],
     "displayedState": {
