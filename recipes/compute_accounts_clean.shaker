@@ -101,7 +101,7 @@
       "disabled": false,
       "type": "StringTransformer",
       "params": {
-        "mode": "TO_LOWER",
+        "mode": "TO_UPPER",
         "columns": [
           "account_type",
           "branch_code",
