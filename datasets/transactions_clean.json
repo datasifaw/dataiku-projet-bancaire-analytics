@@ -263,7 +263,7 @@
           "UPI"
         ],
         "id": "TMzkNXV9",
-        "displayName": "All values of channel are in set",
+        "displayName": "channel valide",
         "computeOnBuildMode": "PARTITION",
         "autoRun": true,
         "enabled": true
