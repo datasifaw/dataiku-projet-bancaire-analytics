@@ -1,6 +1,52 @@
 {
   "columnsSelection": {
-    "mode": "ALL"
+    "mode": "ALL",
+    "list": [
+      {
+        "d": true,
+        "name": "customer_id"
+      },
+      {
+        "d": true,
+        "name": "first_name"
+      },
+      {
+        "d": true,
+        "name": "last_name"
+      },
+      {
+        "d": true,
+        "name": "date_of_birth"
+      },
+      {
+        "d": true,
+        "name": "pan_number"
+      },
+      {
+        "d": true,
+        "name": "email"
+      },
+      {
+        "d": true,
+        "name": "phone_number"
+      },
+      {
+        "d": true,
+        "name": "kyc_status"
+      },
+      {
+        "d": true,
+        "name": "branch_code"
+      },
+      {
+        "d": true,
+        "name": "created_at"
+      },
+      {
+        "d": true,
+        "name": "updated_at"
+      }
+    ]
   },
   "explorationSampling": {
     "_refreshTrigger": 0,
@@ -30,8 +76,30 @@
   "explorationFilters": [],
   "columnOrder": [],
   "columnUseScientificNotationByName": {},
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "StringTransformer",
+      "params": {
+        "mode": "TRIM",
+        "columns": [
+          "first_name",
+          "last_name",
+          "kyc_status",
+          "branch_code"
+        ],
+        "appliesTo": "COLUMNS",
+        "truncate_limit": 0
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -59,7 +127,19 @@
   },
   "analysisColumnData": {},
   "flagNumericValues": true,
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "kyc_status": 120,
+    "branch_code": 100,
+    "pan_number": 120,
+    "updated_at": 197,
+    "date_of_birth": 141,
+    "last_name": 100,
+    "created_at": 197,
+    "phone_number": 134,
+    "customer_id": 100,
+    "first_name": 100,
+    "email": 190
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
