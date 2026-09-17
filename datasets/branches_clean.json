@@ -181,7 +181,24 @@
   },
   "metricsChecks": {
     "monitor": false,
-    "checks": [],
+    "checks": [
+      {
+        "type": "ColumnNotEmptyRule",
+        "columns": [
+          "branch_code"
+        ],
+        "thresholdType": "ENTIRE_COLUMN_NOT_EMPTY",
+        "maximum": 0.0,
+        "maximumEnabled": false,
+        "softMaximum": 0.0,
+        "softMaximumEnabled": false,
+        "id": "02TbrgVL",
+        "displayName": "No empty values exist in branch_code",
+        "computeOnBuildMode": "PARTITION",
+        "autoRun": true,
+        "enabled": true
+      }
+    ],
     "displayedState": {
       "checks": []
     }
