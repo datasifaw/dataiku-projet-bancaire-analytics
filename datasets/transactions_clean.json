@@ -234,6 +234,21 @@
         "computeOnBuildMode": "PARTITION",
         "autoRun": true,
         "enabled": true
+      },
+      {
+        "type": "ValuesInSetRule",
+        "columns": [
+          "txn_type"
+        ],
+        "valueSet": [
+          "CREDIT",
+          "DEBIT"
+        ],
+        "id": "4mLZtNf3",
+        "displayName": "txn_type valide",
+        "computeOnBuildMode": "PARTITION",
+        "autoRun": true,
+        "enabled": true
       }
     ],
     "displayedState": {
