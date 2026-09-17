@@ -107,8 +107,7 @@
       {"name":"balance","type":"double"},
       {"name":"currency","type":"string"},
       {"name":"branch_code","type":"string"},
-      {"name":"opened_date","type":"dateonly"},
-      {"name":"updated_at","type":"datetimenotz"}
+      {"name":"opened_date","type":"dateonly"}
     ],
     "userModified": true
   },
