@@ -82,7 +82,7 @@
   },
   "steps": [
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "StringTransformer",
@@ -93,6 +93,22 @@
           "last_name",
           "kyc_status",
           "branch_code"
+        ],
+        "appliesTo": "COLUMNS",
+        "truncate_limit": 0
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "StringTransformer",
+      "params": {
+        "mode": "TO_UPPER",
+        "columns": [
+          "branch_code",
+          "kyc_status"
         ],
         "appliesTo": "COLUMNS",
         "truncate_limit": 0
