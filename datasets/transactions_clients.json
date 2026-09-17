@@ -111,11 +111,7 @@
       {"name":"first_name","type":"string"},
       {"name":"last_name","type":"string"},
       {"name":"date_of_birth","type":"dateonly"},
-      {"name":"pan_number","type":"string"},
-      {"name":"email","type":"string"},
-      {"name":"phone_number","type":"bigint"},
-      {"name":"kyc_status","type":"string"},
-      {"name":"updated_at","type":"datetimenotz"}
+      {"name":"kyc_status","type":"string"}
     ],
     "userModified": true
   },
