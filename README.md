@@ -102,17 +102,20 @@ Scoring Machine Learning
 ↓
 Rafraîchissement du dashboard
 
-## Technologies
+## Technologies : 
 
 - Dataiku
 - Visual Recipes
 - Prepare Recipe
 - Join Recipe
 - Group Recipe
+  
 - Visual Machine Learning
 - Classification
 - Clustering
+  
 - Python
 - SQL
+  
 - Dataiku Scenarios
 - Dataiku Dashboards
