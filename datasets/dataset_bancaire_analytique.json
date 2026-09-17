@@ -114,8 +114,7 @@
       {"name":"kyc_status","type":"string"},
       {"name":"branch_name","type":"string"},
       {"name":"city","type":"string"},
-      {"name":"state","type":"string"},
-      {"name":"region","type":"string"}
+      {"name":"state","type":"string"}
     ],
     "userModified": true
   },
