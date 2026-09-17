@@ -1,0 +1,139 @@
+{
+  "joins": [
+    {
+      "table2": 1,
+      "table1": 0,
+      "conditionsMode": "AND",
+      "type": "LEFT",
+      "outerJoinOnTheLeft": true,
+      "on": []
+    }
+  ],
+  "selectedColumns": [
+    {
+      "name": "txn_id",
+      "table": 0
+    },
+    {
+      "name": "account_id",
+      "table": 0
+    },
+    {
+      "name": "txn_type",
+      "table": 0
+    },
+    {
+      "name": "amount",
+      "table": 0
+    },
+    {
+      "name": "txn_timestamp",
+      "table": 0
+    },
+    {
+      "name": "channel",
+      "table": 0
+    },
+    {
+      "name": "status",
+      "table": 0
+    },
+    {
+      "name": "created_at",
+      "table": 0
+    },
+    {
+      "name": "customer_id",
+      "table": 1
+    },
+    {
+      "name": "account_type",
+      "table": 1
+    },
+    {
+      "name": "balance",
+      "table": 1
+    },
+    {
+      "name": "currency",
+      "table": 1
+    },
+    {
+      "name": "branch_code",
+      "table": 1
+    },
+    {
+      "name": "opened_date",
+      "table": 1
+    },
+    {
+      "name": "updated_at",
+      "table": 1
+    }
+  ],
+  "resolvedSelectedColumns": [],
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVESERVER2"
+    },
+    "sqlPipelineParams": {
+      "pipelineAllowMerge": true,
+      "pipelineAllowStart": true
+    },
+    "cdePipelineParams": {
+      "pipelineAllowMerge": true,
+      "pipelineAllowStart": true
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "containerSelection": {
+      "containerMode": "INHERIT"
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "skipPrerunValidate": false,
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "mode": "AUTO",
+        "autoModeRepartitionInto": 10,
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "executionEngine": "SPARK_SUBMIT",
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "virtualInputs": [
+    {
+      "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "originLabel": "transactions_clean",
+      "index": 0,
+      "computedColumns": []
+    },
+    {
+      "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "originLabel": "accounts_clean",
+      "index": 1,
+      "computedColumns": []
+    }
+  ],
+  "enableAutoCastInJoinConditions": false
+}
