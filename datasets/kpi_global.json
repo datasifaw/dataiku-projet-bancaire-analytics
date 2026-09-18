@@ -95,6 +95,9 @@
   "schema": {
     "columns": [
       {"name":"groupe_kpi","type":"string"},
+      {"name":"amount_avg","type":"double"},
+      {"name":"amount_sum","type":"double"},
+      {"name":"customer_id_distinct","type":"bigint"},
       {"name":"count","type":"bigint"}
     ],
     "userModified": true
