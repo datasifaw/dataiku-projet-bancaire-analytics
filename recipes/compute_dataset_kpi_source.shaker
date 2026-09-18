@@ -85,6 +85,10 @@
       {
         "d": true,
         "name": "state"
+      },
+      {
+        "d": true,
+        "name": "groupe_kpi"
       }
     ]
   },
@@ -127,8 +131,8 @@
       "disabled": false,
       "type": "CreateColumnWithGREL",
       "params": {
-        "expression": "",
-        "column": "formula_result",
+        "expression": "\"GLOBAL\"",
+        "column": "groupe_kpi",
         "errorColumn": ""
       },
       "alwaysShowComment": false
@@ -178,6 +182,7 @@
     "balance": 134,
     "txn_type": 100,
     "branch_name": 148,
+    "groupe_kpi": 100,
     "currency": 100,
     "state": 100,
     "customer_id": 100,
