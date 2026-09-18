@@ -30,7 +30,7 @@
       "type": "kpi",
       "variant": "normal",
       "name": "Moy. de montant_moyen",
-      "userEditedName": false,
+      "userEditedName": true,
       "displayWithEChartsByDefault": true,
       "genericDimension0": [],
       "genericDimension1": [],
