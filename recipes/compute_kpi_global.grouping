@@ -466,7 +466,12 @@
     }
   },
   "enlargeYourBits": true,
-  "outputColumnNameOverrides": {},
+  "outputColumnNameOverrides": {
+    "customer_id_distinct": "nombre_clients_actifs",
+    "amount_sum": "montant_total",
+    "count": "nombre_transactions",
+    "amount_avg": "montant_moyen"
+  },
   "computedColumns": [],
   "postFilter": {
     "$status": {
