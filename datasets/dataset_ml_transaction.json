@@ -98,6 +98,7 @@
       {"name":"account_id","type":"bigint"},
       {"name":"txn_type","type":"string"},
       {"name":"amount","type":"double"},
+      {"name":"transaction_elevee","type":"bigint"},
       {"name":"txn_timestamp","type":"datetimenotz"},
       {"name":"channel","type":"string"},
       {"name":"status","type":"string"},
