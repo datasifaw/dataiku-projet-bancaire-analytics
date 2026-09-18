@@ -1,6 +1,32 @@
 {
   "columnsSelection": {
-    "mode": "ALL"
+    "mode": "ALL",
+    "list": [
+      {
+        "d": true,
+        "name": "customer_id"
+      },
+      {
+        "d": true,
+        "name": "last_name"
+      },
+      {
+        "d": true,
+        "name": "first_name"
+      },
+      {
+        "d": true,
+        "name": "client"
+      },
+      {
+        "d": true,
+        "name": "montant_total"
+      },
+      {
+        "d": true,
+        "name": "count"
+      }
+    ]
   },
   "explorationSampling": {
     "_refreshTrigger": 0,
@@ -30,8 +56,24 @@
   "explorationFilters": [],
   "columnOrder": [],
   "columnUseScientificNotationByName": {},
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "concat(first_name, \" \", last_name)",
+        "column": "client",
+        "errorColumn": ""
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -59,7 +101,14 @@
   },
   "analysisColumnData": {},
   "flagNumericValues": true,
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "montant_total": 141,
+    "count": 100,
+    "last_name": 100,
+    "client": 100,
+    "customer_id": 100,
+    "first_name": 100
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
