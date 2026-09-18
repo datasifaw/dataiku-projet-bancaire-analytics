@@ -446,7 +446,10 @@
     }
   },
   "enlargeYourBits": true,
-  "outputColumnNameOverrides": {},
+  "outputColumnNameOverrides": {
+    "amount_sum": "montant_total",
+    "count": "nombre_transactions"
+  },
   "computedColumns": [],
   "postFilter": {
     "$status": {
