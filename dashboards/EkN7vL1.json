@@ -8,8 +8,8 @@
             "id": "c105aa52-4a2a-4f42-af6f-2b3036e66c07",
             "tileType": "INSIGHT",
             "box": {
-              "top": -1,
-              "left": -1,
+              "top": 0,
+              "left": 0,
               "width": 12,
               "height": 12
             },
@@ -43,6 +43,9 @@
               "showTitle": "YES",
               "fontColor": "#000000",
               "fontSize": 13
+            },
+            "grid": {
+              "tiles": []
             },
             "useDashboardSpacing": true,
             "tileSpacing": 8,
@@ -56,8 +59,8 @@
             "id": "58ffb85e-9167-4484-be70-582364ec753b",
             "tileType": "INSIGHT",
             "box": {
-              "top": -1,
-              "left": -1,
+              "top": 0,
+              "left": 12,
               "width": 12,
               "height": 12
             },
@@ -91,6 +94,9 @@
               "showTitle": "YES",
               "fontColor": "#000000",
               "fontSize": 13
+            },
+            "grid": {
+              "tiles": []
             },
             "useDashboardSpacing": true,
             "tileSpacing": 8,
@@ -104,8 +110,8 @@
             "id": "5ce1e381-a30d-4691-9448-f9ede85cac2e",
             "tileType": "INSIGHT",
             "box": {
-              "top": -1,
-              "left": -1,
+              "top": 1,
+              "left": 24,
               "width": 12,
               "height": 12
             },
@@ -139,6 +145,9 @@
               "showTitle": "YES",
               "fontColor": "#000000",
               "fontSize": 13
+            },
+            "grid": {
+              "tiles": []
             },
             "useDashboardSpacing": true,
             "tileSpacing": 8,
@@ -152,8 +161,8 @@
             "id": "6d448d48-9f45-40bb-87dd-16ca4b92d569",
             "tileType": "INSIGHT",
             "box": {
-              "top": -1,
-              "left": -1,
+              "top": 12,
+              "left": 0,
               "width": 12,
               "height": 12
             },
@@ -187,6 +196,9 @@
               "showTitle": "YES",
               "fontColor": "#000000",
               "fontSize": 13
+            },
+            "grid": {
+              "tiles": []
             },
             "useDashboardSpacing": true,
             "tileSpacing": 8,
