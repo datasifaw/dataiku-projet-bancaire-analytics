@@ -95,10 +95,10 @@
   "schema": {
     "columns": [
       {"name":"groupe_kpi","type":"string"},
-      {"name":"amount_avg","type":"double"},
-      {"name":"amount_sum","type":"double"},
-      {"name":"customer_id_distinct","type":"bigint"},
-      {"name":"count","type":"bigint"}
+      {"name":"montant_moyen","type":"double"},
+      {"name":"montant_total","type":"double"},
+      {"name":"nombre_clients_actifs","type":"bigint"},
+      {"name":"nombre_transactions","type":"bigint"}
     ],
     "userModified": true
   },
