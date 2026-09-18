@@ -156,6 +156,54 @@
             "insightType": "chart",
             "displayMode": "INSIGHT",
             "resizeImageMode": "FIT_SIZE"
+          },
+          {
+            "id": "8914b323-444f-4f1d-9598-16d0db7da677",
+            "tileType": "INSIGHT",
+            "box": {
+              "top": -1,
+              "left": -1,
+              "width": 12,
+              "height": 12
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "showXAxis": true,
+              "showXAxisTitle": true,
+              "showYAxis": true,
+              "showYAxisTitle": true,
+              "showLegend": false,
+              "showBrush": false,
+              "showBreadcrumb": true,
+              "inheritLegendPlacement": true,
+              "legendPlacement": "OUTER_RIGHT",
+              "showTooltips": true,
+              "autoPlayAnimation": true,
+              "disableHierarchyDrillDown": false,
+              "useInsightTheme": false
+            },
+            "backgroundOpacity": 1.0,
+            "backgroundColor": "#ffffff",
+            "autoLoad": true,
+            "locked": false,
+            "isDisplacing": false,
+            "borderOptions": {
+              "color": "#CCCCCC",
+              "radius": 0,
+              "size": 1
+            },
+            "titleOptions": {
+              "showTitle": "YES",
+              "fontColor": "#000000",
+              "fontSize": 13
+            },
+            "useDashboardSpacing": true,
+            "tileSpacing": 8,
+            "padding": 0,
+            "insightId": "OMDF80U",
+            "insightType": "chart",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
           }
         ]
       },
