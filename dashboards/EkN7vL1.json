@@ -8,8 +8,8 @@
             "id": "c105aa52-4a2a-4f42-af6f-2b3036e66c07",
             "tileType": "INSIGHT",
             "box": {
-              "top": 0,
-              "left": 0,
+              "top": 7,
+              "left": 24,
               "width": 12,
               "height": 12
             },
@@ -59,7 +59,7 @@
             "id": "58ffb85e-9167-4484-be70-582364ec753b",
             "tileType": "INSIGHT",
             "box": {
-              "top": 0,
+              "top": 7,
               "left": 12,
               "width": 12,
               "height": 12
@@ -110,7 +110,7 @@
             "id": "6d448d48-9f45-40bb-87dd-16ca4b92d569",
             "tileType": "INSIGHT",
             "box": {
-              "top": 12,
+              "top": 7,
               "left": 0,
               "width": 12,
               "height": 12
@@ -161,10 +161,10 @@
             "id": "8914b323-444f-4f1d-9598-16d0db7da677",
             "tileType": "INSIGHT",
             "box": {
-              "top": 3,
-              "left": 24,
-              "width": 12,
-              "height": 12
+              "top": 0,
+              "left": 0,
+              "width": 36,
+              "height": 7
             },
             "clickAction": "DO_NOTHING",
             "tileParams": {
