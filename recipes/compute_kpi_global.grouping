@@ -85,15 +85,16 @@
       "column": "amount",
       "count": false,
       "$idx": 3,
-      "sum": false,
+      "sum": true,
       "concat": false,
       "type": "double",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
-      "avg": false,
+      "avg": true,
       "median": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -186,9 +187,10 @@
       "concatDistinct": false,
       "sum2": false,
       "min": false,
-      "countDistinct": false,
+      "countDistinct": true,
       "avg": false,
       "median": false,
+      "$selected": true,
       "stddev": false,
       "first": false
     },
@@ -473,6 +475,18 @@
           {
             "name": "groupe_kpi",
             "type": "string"
+          },
+          {
+            "name": "amount_avg",
+            "type": "double"
+          },
+          {
+            "name": "amount_sum",
+            "type": "double"
+          },
+          {
+            "name": "customer_id_distinct",
+            "type": "bigint"
           },
           {
             "name": "count",
