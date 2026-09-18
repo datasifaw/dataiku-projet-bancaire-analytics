@@ -41,6 +41,7 @@
             },
             "titleOptions": {
               "showTitle": "YES",
+              "title": "Montant des transactions par canal",
               "fontColor": "#000000",
               "fontSize": 13
             },
@@ -92,6 +93,7 @@
             },
             "titleOptions": {
               "showTitle": "YES",
+              "title": "Volume des transactions par canal",
               "fontColor": "#000000",
               "fontSize": 13
             },
@@ -143,6 +145,7 @@
             },
             "titleOptions": {
               "showTitle": "YES",
+              "title": "Top 10 clients par montant total",
               "fontColor": "#000000",
               "fontSize": 13
             },
@@ -194,6 +197,7 @@
             },
             "titleOptions": {
               "showTitle": "YES",
+              "title": "kpi global",
               "fontColor": "#000000",
               "fontSize": 13
             },
