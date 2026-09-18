@@ -95,7 +95,8 @@
   "schema": {
     "columns": [
       {"name":"channel","type":"string"},
-      {"name":"count","type":"bigint"}
+      {"name":"montant_total","type":"double"},
+      {"name":"nombre_transactions","type":"bigint"}
     ],
     "userModified": true
   },
