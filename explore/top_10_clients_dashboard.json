@@ -78,8 +78,8 @@
         "id": "9edd12ed",
         "type": "stacked_columns",
         "variant": "normal",
-        "name": "Moy. de montant_total by client",
-        "userEditedName": false,
+        "name": "Top 10 clients par montant total",
+        "userEditedName": true,
         "displayWithEChartsByDefault": true,
         "genericDimension0": [
           {
