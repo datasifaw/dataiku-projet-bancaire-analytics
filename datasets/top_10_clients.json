@@ -93,7 +93,13 @@
     }
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {"name":"customer_id","type":"bigint"},
+      {"name":"last_name","type":"string"},
+      {"name":"first_name","type":"string"},
+      {"name":"montant_total","type":"double"},
+      {"name":"count","type":"bigint"}
+    ],
     "userModified": true
   },
   "typeSystemVersion": "V2",
