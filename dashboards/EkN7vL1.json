@@ -161,8 +161,8 @@
             "id": "8914b323-444f-4f1d-9598-16d0db7da677",
             "tileType": "INSIGHT",
             "box": {
-              "top": -1,
-              "left": -1,
+              "top": 3,
+              "left": 24,
               "width": 12,
               "height": 12
             },
@@ -196,6 +196,9 @@
               "showTitle": "YES",
               "fontColor": "#000000",
               "fontSize": 13
+            },
+            "grid": {
+              "tiles": []
             },
             "useDashboardSpacing": true,
             "tileSpacing": 8,
