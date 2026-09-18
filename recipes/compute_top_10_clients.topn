@@ -4,10 +4,16 @@
     "enabled": false
   },
   "retrievedColumnsSelectionMode": "ALL",
-  "firstRows": 1,
+  "firstRows": 10,
   "keys": [],
   "computedColumns": [],
-  "retrievedColumns": [],
+  "retrievedColumns": [
+    "customer_id",
+    "last_name",
+    "first_name",
+    "montant_total",
+    "count"
+  ],
   "lastRows": 0,
   "duplicateCount": false,
   "engineParams": {
@@ -53,7 +59,12 @@
   },
   "rank": false,
   "denseRank": false,
-  "orders": [],
+  "orders": [
+    {
+      "column": "montant_total",
+      "desc": true
+    }
+  ],
   "rowNumber": false,
   "outputColumnNameOverrides": {}
 }
