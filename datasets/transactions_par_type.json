@@ -95,8 +95,8 @@
   "schema": {
     "columns": [
       {"name":"txn_type","type":"string"},
-      {"name":"amount_sum","type":"double"},
-      {"name":"count","type":"bigint"}
+      {"name":"montant_total","type":"double"},
+      {"name":"nombre_transactions","type":"bigint"}
     ],
     "userModified": true
   },
