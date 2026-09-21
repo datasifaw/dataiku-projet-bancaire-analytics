@@ -78,14 +78,100 @@
         "id": "6a94ed20",
         "type": "grouped_columns",
         "variant": "normal",
-        "name": "Nouveau graphique",
-        "userEditedName": false,
+        "name": "Répartition des clients par segment",
+        "userEditedName": true,
         "displayWithEChartsByDefault": true,
-        "genericDimension0": [],
+        "genericDimension0": [
+          {
+            "numParams": {
+              "mode": "FIXED_NB",
+              "emptyBinsMode": "ZEROS",
+              "binSize": 1.0,
+              "niceBounds": false,
+              "customBinValues": [],
+              "nbBins": 10
+            },
+            "maxValues": 20,
+            "generateOthersCategory": true,
+            "forceLastPositionOthers": false,
+            "oneTickPerBin": "AUTO",
+            "filters": [],
+            "isA": "dimension",
+            "sort": {
+              "type": "NATURAL",
+              "sortId": "NATURAL",
+              "label": "Ordonnancement naturel",
+              "sortAscending": true
+            },
+            "multiplier": "Auto",
+            "hideTrailingZeros": true,
+            "digitGrouping": "DEFAULT",
+            "useParenthesesForNegativeValues": false,
+            "shouldFormatInPercentage": false,
+            "useLastValueAsTotal": false,
+            "column": "cluster_labels",
+            "type": "ALPHANUM"
+          }
+        ],
         "genericDimension1": [],
         "facetDimension": [],
         "animationDimension": [],
-        "genericMeasures": [],
+        "genericMeasures": [
+          {
+            "function": "COUNT",
+            "type": "NUMERICAL",
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "isUnaggregated": false,
+            "uaComputeMode": "STACK",
+            "computeMode": "NORMAL",
+            "computeModeDim": 0,
+            "multiplier": "Auto",
+            "digitGrouping": "DEFAULT",
+            "useParenthesesForNegativeValues": false,
+            "shouldFormatInPercentage": false,
+            "hideTrailingZeros": true,
+            "prefix": "",
+            "suffix": "",
+            "showValue": true,
+            "showDisplayLabel": true,
+            "labelPosition": "BOTTOM",
+            "percentile": 50.0,
+            "isCustomPercentile": false,
+            "kpiTextAlign": "CENTER",
+            "kpiValueFontSizeMode": "RESPONSIVE",
+            "kpiValueFontSize": 32,
+            "responsiveTextAreaFill": 100,
+            "valueTextFormatting": {
+              "fontSize": 11,
+              "fontColor": "#333333",
+              "hasBackground": false,
+              "fontFamily": "SourceSansPro"
+            },
+            "labelTextFormatting": {
+              "fontSize": 15,
+              "fontColor": "#333333",
+              "hasBackground": false,
+              "fontFamily": "SourceSansPro"
+            },
+            "valuesInChartDisplayOptions": {
+              "displayValues": true,
+              "textFormatting": {
+                "fontSize": 20,
+                "fontColor": "AUTO",
+                "hasBackground": false,
+                "backgroundColor": "#D9D9D9BF"
+              },
+              "addDetails": false,
+              "additionalMeasures": [],
+              "placementMode": "AUTO",
+              "spacing": 2
+            },
+            "colorRules": []
+          }
+        ],
         "genericHierarchyDimension": [],
         "yHierarchyDimension": [],
         "xHierarchyDimension": [],
@@ -135,6 +221,7 @@
         "tooltipMeasures": [],
         "boxplotBreakdownDim": [],
         "boxplotValue": [],
+        "filters": [],
         "xAxisFormatting": {
           "displayAxis": true,
           "displayLineAndTicks": true,
@@ -295,7 +382,7 @@
         "hexbinNumber": 20,
         "hexbinRadiusMode": "NUM_HEXAGONS",
         "valuesInChartDisplayOptions": {
-          "displayValues": false,
+          "displayValues": true,
           "displayPieLabelsOrValues": true,
           "displayMode": "LABELS",
           "overlappingStrategy": "AUTO",
@@ -342,8 +429,11 @@
             "values": [],
             "fixedValues": false
           },
-          "customColors": {}
+          "customColors": {
+            "m_null_COUNT_1": "#1f77b4"
+          }
         },
+        "colorGroups": [],
         "bubblesOptions": {
           "defaultRadius": 5.0,
           "singleShape": "FILLED_CIRCLE"
@@ -444,8 +534,8 @@
           "lockSquareGrid": false
         },
         "mapGridOptions": {
-          "gridLonDeg": 0.6,
-          "gridLatDeg": 0.6
+          "gridLonDeg": 0.5,
+          "gridLatDeg": 0.5
         },
         "radarOptions": {
           "filled": false,
@@ -511,10 +601,11 @@
           },
           "displayPointer": false
         },
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABQCAYAAADSm7GJAAACvElEQVR4AeyTS0ocURRAq1xEIIPYySALSAaSNaQ1mWQDySQ7MB8IBkLA7jUIggNBEBwo4i4cO9J2Cw4U/LfSk+JZvE+9++peT8Ptpl/V/Z3Dm6v4mCaAYNN6qwrBCDZOwPh63GAEGydgfD1uMIKNEzC+3nO9wU6tg5/77+Z/7G0lxrqzeKFDBDfA11X1IiUa5Yr/RXBxBXkHQHBevsWrI7i4grwDIDgv3+LVEVxcQd4BEJyXb/HqCC6uIO8ADcF5m1FdngCC5ZmLdkSwKG75ZgiWZy7aEcGiuOWbIVieuWhHBIvilm+GYHnmoh0R/IDb7lew4Pnl3S/3sZESg+W9P3aR9muzYMHT8eu6fpUS0xqEDIEowTKj0aULAgjugmKPayC4x3K6GA3BXVDscQ0E91hOF6MhuAuKPa7RLrjHgzOaHwEE+3FS+xaC1arzGxzBfpzUvoVgter8BkewHye1byFYrTq/wRHsx0ntWwh2qTN0hmBDMl2rINhFxdAZgg3JdK2CYBcVobPB74OXXUTbuAhuo5P52e3V5ffq+mozKW4uP7SNieA2OgaeIdiAxLYVENxGx8CzIMEG9n12KyDYuHIEI9g4AePrcYMRbJyA8fW4wQg2TsD4ev2/wSsrc1UXkSBSc2qU4NuqPkuJEGCvLxb+Dy4W1lLizfn7t749U/aa5vr2mb03zUmJWZ2nfoMFn46Xtk9Hw08pMRkv/ntqoOb5yWj4azIafkuJ4/Hno2Zd1//J6sfDlL0ecxe/umq7zu5Z/n3Miec5WV3acdWenQULniXyq4MAgnV4ip4SwdHodCQiWIen6CkRHI1ORyKCdXiKnjJFcHRTEuUIIFiOdZFOCC6CXa4pguVYF+mE4CLY5ZoiWI51kU4ILoJdrimC5VgX6YTgcOyqMhCsSlf4sAgOZ6YqA8GqdIUPewcAAP//2fAmlQAAAAZJREFUAwDri7ewOpnSxQAAAABJRU5ErkJggg\u003d\u003d",
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT",
         "legendFormatting": {
-          "fontSize": 11,
+          "fontSize": 16,
           "fontColor": "#333333",
           "hasBackground": false
         },
@@ -598,7 +689,9 @@
           },
           "horizontal": {
             "show": false,
-            "displayAxis": {},
+            "displayAxis": {
+              "type": "LEFT_Y_AXIS"
+            },
             "lineFormatting": {
               "type": "FILLED",
               "color": "#d9d9d9",
