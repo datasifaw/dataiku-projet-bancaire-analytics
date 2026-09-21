@@ -1,7 +1,7 @@
 {
   "type": "step_based",
   "name": "scenario_pipeline_banque",
-  "active": false,
+  "active": true,
   "checklists": {
     "checklists": []
   },
@@ -11,7 +11,28 @@
     "suppressTriggersWhileRunning": true
   },
   "tags": [],
-  "triggers": [],
+  "triggers": [
+    {
+      "id": "qgvUoCaC",
+      "type": "temporal",
+      "name": "Temporel",
+      "delay": 5,
+      "active": true,
+      "params": {
+        "repeatFrequency": 1,
+        "frequency": "Daily",
+        "startingFrom": "2026-09-21",
+        "daysOfWeek": [
+          "Monday"
+        ],
+        "monthlyRunOn": "ON_THE_DAY",
+        "minute": 26,
+        "hour": 15,
+        "timezone": "Europe/Paris",
+        "lastUpdate": 1789997484063
+      }
+    }
+  ],
   "reporters": [],
   "params": {
     "steps": [
