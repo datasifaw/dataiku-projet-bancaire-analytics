@@ -445,8 +445,8 @@
     "hierarchies": [],
     "labels": []
   },
-  "lastTrainIndex": 1,
-  "lastTrainJobId": "",
+  "lastTrainIndex": 2,
+  "lastTrainJobId": "Scenario_build_modele_segmentation_clients_kmeans_2026-09-21T13-25-20.230",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
