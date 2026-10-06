@@ -5,7 +5,7 @@
   },
   "backendType": "PY_MEMORY",
   "filterInputColumns": false,
-  "assignmentThreshold": 0.0,
+  "assignmentThreshold": 0,
   "keptInputColumns": [],
   "savedModelType": "DSS_MANAGED",
   "predictionType": "BINARY_CLASSIFICATION",
@@ -14,7 +14,7 @@
   "outputProbabilities": true,
   "computePropensity": false,
   "forceOriginalEngine": false,
-  "treatmentRatio": 0.0,
+  "treatmentRatio": 0,
   "individualExplanationParams": {
     "drawInScoredSet": false,
     "subChunkSize": 5000,
@@ -22,7 +22,7 @@
     "shapleyBackgroundSize": 100,
     "nbExplanations": 3
   },
-  "forcedClassifierThreshold": 0.0,
+  "forcedClassifierThreshold": 0,
   "sparkParams": {
     "pipelineAllowMerge": true,
     "sparkPreparedDFStorageLevel": "MEMORY_AND_DISK",
