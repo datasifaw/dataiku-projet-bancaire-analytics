@@ -1,0 +1,244 @@
+{
+  "script": {
+    "steps": [],
+    "maxProcessedMemTableBytes": -1,
+    "columnsSelection": {
+      "mode": "ALL",
+      "list": [
+        {
+          "name": "txn_id",
+          "d": true
+        },
+        {
+          "name": "account_id",
+          "d": true
+        },
+        {
+          "name": "txn_type",
+          "d": true
+        },
+        {
+          "name": "amount",
+          "d": true
+        },
+        {
+          "name": "transaction_elevee",
+          "d": true
+        },
+        {
+          "name": "txn_timestamp",
+          "d": true
+        },
+        {
+          "name": "channel",
+          "d": true
+        },
+        {
+          "name": "status",
+          "d": true
+        },
+        {
+          "name": "created_at",
+          "d": true
+        },
+        {
+          "name": "customer_id",
+          "d": true
+        },
+        {
+          "name": "account_type",
+          "d": true
+        },
+        {
+          "name": "balance",
+          "d": true
+        },
+        {
+          "name": "currency",
+          "d": true
+        },
+        {
+          "name": "branch_code",
+          "d": true
+        },
+        {
+          "name": "opened_date",
+          "d": true
+        },
+        {
+          "name": "first_name",
+          "d": true
+        },
+        {
+          "name": "last_name",
+          "d": true
+        },
+        {
+          "name": "date_of_birth",
+          "d": true
+        },
+        {
+          "name": "kyc_status",
+          "d": true
+        },
+        {
+          "name": "branch_name",
+          "d": true
+        },
+        {
+          "name": "city",
+          "d": true
+        },
+        {
+          "name": "state",
+          "d": true
+        },
+        {
+          "name": "proba_0",
+          "d": true
+        },
+        {
+          "name": "proba_1",
+          "d": true
+        },
+        {
+          "name": "prediction",
+          "d": true
+        }
+      ]
+    },
+    "columnOrder": [],
+    "columnWidthsByName": {
+      "txn_id": 100,
+      "account_id": 100,
+      "txn_type": 100,
+      "amount": 134,
+      "transaction_elevee": 150,
+      "txn_timestamp": 148,
+      "channel": 100,
+      "status": 100,
+      "created_at": 197,
+      "customer_id": 100,
+      "account_type": 105,
+      "balance": 134,
+      "currency": 100,
+      "branch_code": 100,
+      "opened_date": 127,
+      "first_name": 100,
+      "last_name": 100,
+      "date_of_birth": 141,
+      "kyc_status": 120,
+      "branch_name": 148,
+      "city": 100,
+      "state": 100,
+      "proba_0": 134,
+      "proba_1": 134,
+      "prediction": 100
+    },
+    "columnUseScientificNotationByName": {},
+    "coloring": {
+      "scheme": "MEANING_AND_STATUS",
+      "individualColumns": [],
+      "individualColumnsRules": [],
+      "valueColoringMode": "HASH",
+      "coloringGroups": []
+    },
+    "sorting": [],
+    "analysisColumnData": {},
+    "explorationSampling": {
+      "selection": {
+        "maxRecordsForDisplay": -1,
+        "maxStoredBytes": 104857600,
+        "timeout": -1,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 10000,
+        "targetRatio": 0.02,
+        "ascending": true,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "vizSampling": {
+      "selection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "FULL",
+        "maxRecords": -1,
+        "targetRatio": 0.02,
+        "ascending": true,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
+    "globalSearchQuery": "",
+    "explorationFilters": [
+      {
+        "column": "transaction_elevee",
+        "type": "columnFilter",
+        "currentMode": "FACET",
+        "active": true,
+        "facet": {
+          "type": "facet",
+          "column": "transaction_elevee",
+          "columnType": "NUMERICAL",
+          "currentMode": "NUMERICAL",
+          "sort": "count",
+          "selectedValues": {}
+        },
+        "alphanumFilter": {
+          "type": "alphanum",
+          "column": "transaction_elevee",
+          "selectedValues": [],
+          "params": {
+            "mode": "full_string",
+            "normalization": "exact"
+          }
+        },
+        "validityFilter": {
+          "type": "validity",
+          "column": "transaction_elevee",
+          "params": {
+            "type": "LongMeaning",
+            "ok": true,
+            "nok": true,
+            "empty": true
+          }
+        }
+      }
+    ],
+    "previewMode": "ALL_ROWS"
+  },
+  "charts": [],
+  "interactiveSearch": {
+    "savedQueries": []
+  },
+  "customMeasures": [],
+  "reusableDimensions": [],
+  "hierarchies": []
+}
