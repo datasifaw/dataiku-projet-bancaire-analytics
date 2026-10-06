@@ -1,0 +1,59 @@
+{
+  "sqlPipelineParams": {
+    "pipelineAllowMerge": true,
+    "pipelineAllowStart": true
+  },
+  "backendType": "PY_MEMORY",
+  "filterInputColumns": false,
+  "assignmentThreshold": 0.0,
+  "keptInputColumns": [],
+  "savedModelType": "DSS_MANAGED",
+  "predictionType": "BINARY_CLASSIFICATION",
+  "pastTimestepsToInclude": -1,
+  "outputProbaPercentiles": false,
+  "outputProbabilities": true,
+  "computePropensity": false,
+  "forceOriginalEngine": false,
+  "treatmentRatio": 0.0,
+  "individualExplanationParams": {
+    "drawInScoredSet": false,
+    "subChunkSize": 5000,
+    "method": "ICE",
+    "shapleyBackgroundSize": 100,
+    "nbExplanations": 3
+  },
+  "forcedClassifierThreshold": 0.0,
+  "sparkParams": {
+    "pipelineAllowMerge": true,
+    "sparkPreparedDFStorageLevel": "MEMORY_AND_DISK",
+    "pipelineAllowStart": true,
+    "sparkExecutionEngine": "SPARK_SUBMIT",
+    "sparkConf": {
+      "inheritConf": "default",
+      "conf": []
+    },
+    "sparkRepartitionNonHDFS": 1,
+    "sparkUseGlobalMetastore": false
+  },
+  "treatmentAssignmentMode": "SAMPLE_RATIO_APPROX",
+  "gpuConfig": {
+    "disabledCapabilities": [],
+    "params": {
+      "perGPUMemoryFraction": 0.5,
+      "gpuAllowGrowth": false,
+      "useGpu": false,
+      "gpuList": [
+        0
+      ]
+    }
+  },
+  "mlFlowOutputStyle": "PARSED",
+  "needsInputDataFolder": false,
+  "pythonBatchSize": 100000,
+  "assignTreatment": false,
+  "outputModelMetadata": false,
+  "refitModel": false,
+  "batchSize": 100,
+  "outputExplanations": false,
+  "overrideModelSpecifiedThreshold": false
+}
