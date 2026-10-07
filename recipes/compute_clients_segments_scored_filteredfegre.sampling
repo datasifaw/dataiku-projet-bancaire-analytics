@@ -1,4 +1,20 @@
 {
+  "uiData": {
+    "mode": "\u0026\u0026",
+    "$latestOperator": "\u0026\u0026",
+    "$filterOptions": "rules",
+    "conditions": [
+      {
+        "input": "cluster_labels",
+        "string": "Clients atypiques à très forte activité / valeur",
+        "$showList": false,
+        "num": 0,
+        "items": [],
+        "operator": "\u003d\u003d [string]"
+      }
+    ]
+  },
+  "$status": {},
   "distinct": false,
-  "enabled": false
+  "enabled": true
 }
