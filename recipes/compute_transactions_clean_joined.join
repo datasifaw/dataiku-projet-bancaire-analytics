@@ -6,68 +6,103 @@
       "conditionsMode": "AND",
       "type": "LEFT",
       "outerJoinOnTheLeft": true,
-      "on": []
+      "on": [
+        {
+          "column1": {
+            "name": "account_id",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "windowFrom": 0,
+          "column2": {
+            "name": "account_id",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false,
+          "windowTo": 0
+        }
+      ]
     }
   ],
   "selectedColumns": [
     {
       "name": "txn_id",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "account_id",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "txn_type",
+      "type": "string",
       "table": 0
     },
     {
       "name": "amount",
+      "type": "double",
       "table": 0
     },
     {
       "name": "txn_timestamp",
+      "type": "datetimenotz",
       "table": 0
     },
     {
       "name": "channel",
+      "type": "string",
       "table": 0
     },
     {
       "name": "status",
+      "type": "string",
       "table": 0
     },
     {
       "name": "created_at",
+      "type": "datetimenotz",
       "table": 0
     },
     {
       "name": "customer_id",
+      "type": "bigint",
       "table": 1
     },
     {
       "name": "account_type",
+      "type": "string",
       "table": 1
     },
     {
       "name": "balance",
+      "type": "double",
       "table": 1
     },
     {
       "name": "currency",
+      "type": "string",
       "table": 1
     },
     {
       "name": "branch_code",
+      "type": "string",
       "table": 1
     },
     {
       "name": "opened_date",
+      "type": "dateonly",
       "table": 1
     },
     {
       "name": "updated_at",
+      "type": "datetimenotz",
       "table": 1
     }
   ],
@@ -135,5 +170,75 @@
       "computedColumns": []
     }
   ],
+  "computedColumns": [],
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "txn_id",
+            "type": "bigint"
+          },
+          {
+            "name": "account_id",
+            "type": "bigint"
+          },
+          {
+            "name": "txn_type",
+            "type": "string"
+          },
+          {
+            "name": "amount",
+            "type": "double"
+          },
+          {
+            "name": "txn_timestamp",
+            "type": "datetimenotz"
+          },
+          {
+            "name": "channel",
+            "type": "string"
+          },
+          {
+            "name": "status",
+            "type": "string"
+          },
+          {
+            "name": "created_at",
+            "type": "datetimenotz"
+          },
+          {
+            "name": "customer_id",
+            "type": "bigint"
+          },
+          {
+            "name": "account_type",
+            "type": "string"
+          },
+          {
+            "name": "balance",
+            "type": "double"
+          },
+          {
+            "name": "currency",
+            "type": "string"
+          },
+          {
+            "name": "branch_code",
+            "type": "string"
+          },
+          {
+            "name": "opened_date",
+            "type": "dateonly"
+          },
+          {
+            "name": "updated_at",
+            "type": "datetimenotz"
+          }
+        ],
+        "userModified": false
+      }
+    }
+  },
   "enableAutoCastInJoinConditions": false
 }
