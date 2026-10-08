@@ -6,7 +6,7 @@
   "cleanTemporaryVersionsPostJob": false,
   "name": "modele_segmentation_clients_kmeans",
   "contentType": "clustering/py_memory",
-  "activeVersion": "1791379586793",
+  "activeVersion": "1791465989319",
   "inlineVersions": [],
   "conditionalOutputs": [],
   "partitioning": {
