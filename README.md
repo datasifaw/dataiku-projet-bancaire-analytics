@@ -9,6 +9,6 @@ Documentation du projet bancaire Dataiku.
 
 Amélioration de la documentation du projet
 
-Dataiku pour l'analyse bancaire.
+Dataiku pour l'analyse bancaire
 
 Version_1
